@@ -29,16 +29,63 @@ section {
   -webkit-backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.3);
   flex-basis: 20%;
-  height: 450px;
-  padding: 15px;
+  height: 480px;
+  padding: 10px;
 }
-
 
 .calc-screen {
-    flex: 1;
-    padding: 10px ;
-    text-align: right;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+  flex: 1;
+  padding: 15px ;
+  text-align: right;
+  width: 95%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 7px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px ;
+  width: 100%;
+  padding: 15px 15px 10px 15px;
+}
+
+.calc-btn {
+  width: 100%;
+}
+
+.calc-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.calc-row button {
+  width: 65px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.calc-btn-C {
+  flex-basis: 45%;
+}
+
+.calc-btn-0 {
+  flex-basis: 70%;
+}
+
+.calc-row button:nth-last-child(1){
+  background-color: rgba(144, 23, 144, 0.2);
+}
+
+.calc-row button:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+.calc-row button:nth-last-child(1):hover {
+  background-color: azure;
+}
+
